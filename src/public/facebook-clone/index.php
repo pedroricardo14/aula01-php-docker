@@ -564,7 +564,7 @@
                 </div>
                 <div class="w-full shadow h-auto bg-white my-2 rounded-md">
                   <?php
-                    include('array.php');
+                    include('../array.php');
                     
                   ?>
                   <div class="flex items-center space-x-2 p-2.5 px-4">
