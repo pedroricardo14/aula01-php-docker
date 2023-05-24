@@ -190,13 +190,13 @@ echo 'Temos:' . $estoqueCarros[1][1]
 print_r($_GET)
 
 
+
+
+
+
+
+
 */
-
-
-
-
-
-
 
 
 
@@ -238,9 +238,9 @@ print_r($_GET)
             Nome: <input type="text" name="nome" />
             <input type="submit">
 
-        </form> -->
+        </form> --> 
         <?php
-            if(empty($_GET['nome'])){
+         /*   if(empty($_GET['nome'])){
                 echo 'Nome é um campo obrigatório.';
             }else{
                 echo $_GET['nome'] . ', obrigado por se inscrever.';
@@ -259,15 +259,31 @@ print_r($_GET)
 
             echo $data;
             echo $hora;
+            */
+            function oi(){
+                echo 'Olá, tudo bem?';
+            }
+            oi();
 
+            function strconcat($palavra1, $palavra2){
+                return $palavra1 . $palavra2;
+            }
+            echo strconcat('<br />Olá', ' a todos!');
 
-
-
-
-
+            $a = 3;
+            function teste()
+            {
+                $a = 0;
+                $a += 2;
+            }
+            teste();
+            echo $a;
 
         ?>
-        Olá <?php echo $mensagem; ?>
+       <!-- Olá <?php echo $mensagem; ?>-->
+
+       
+        
     </body>
 </html>
 
