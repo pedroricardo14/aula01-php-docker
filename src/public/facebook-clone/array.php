@@ -1,3 +1,4 @@
+<?php
 $posts = array(
   array(
     'title' => 'Festa no parque',
@@ -56,3 +57,5 @@ $posts = array(
     'date' => '2023-06-08'
   )
 );
+
+?>

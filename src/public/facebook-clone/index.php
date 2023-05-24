@@ -475,6 +475,10 @@
                 </div>
               </div>
               <div class="mt-4 w-full h-full">
+              <?php
+                    include('array.php');
+                    foreach ($posts as $post){
+                ?>
                 <div class="w-full shadow h-auto bg-white my-2 rounded-md">
                   <div class="flex items-center space-x-2 p-2.5 px-4">
                     <div class="w-10 h-10">
@@ -486,10 +490,13 @@
                     </div>
                     <div class="flex-grow flex flex-col">
                       <p class="font-semibold text-sm text-gray-700 flex">
-                        Fulano de tal                       <img src="check.png" class="w-4 h-4 ml-1" />
+                      <?php echo $post['title']; ?>                     
+                       <img src="check.png" class="w-4 h-4 ml-1" />
 
                       </p>
-                      <span class="text-xs font-thin text-gray-400">2d</span>
+                      <span class="text-xs font-thin text-gray-400">
+                        <?php echo $post['date']; ?>
+                      </span>
                     </div>
                     <div class="w-8 h-8">
                       <button
@@ -501,16 +508,18 @@
                   </div>
                   <div class="mb-1">
                     <p class="text-gray-700 max-h-20 px-3 text-sm">
-                      Finally made a game using Javascript.Simon, let's take a
-                      ride of classic games. This is a memory based game. Just
-                      remember the pattern of button flashes and click
-                      accordingly. Game Link:
+                      <?php 
+                        echo $post['description'];
+                      ?>
                       <a href="https://lnkd.in/dmJQ8z-v" class="text-blue-600"
                         >https://lnkd.in/dmJQ8z-v</a
                       >
                     </p>
+                   
                   </div>
-
+                  <?php
+                    }
+                    ?>
 
                   <div class="w-full flex flex-col space-y-2 p-2 px-4">
                     <div
@@ -563,10 +572,7 @@
                   </div>
                 </div>
                 <div class="w-full shadow h-auto bg-white my-2 rounded-md">
-                  <?php
-                    include('array.php');
-                    
-                  ?>
+                 
                   <div class="flex items-center space-x-2 p-2.5 px-4">
                     <div class="w-10 h-10">
                       <img
