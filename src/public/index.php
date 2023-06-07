@@ -1,6 +1,5 @@
 
-<?php
-
+<?
 //declare(strict_types=1);
 
 //phpinfo();
@@ -278,6 +277,25 @@ print_r($_GET)
             }
             teste();
             echo $a;
+            function contador()
+            {
+                static $total = 0;
+                return $total++;
+            }
+            for ($i=1;$i<=5;$i++)
+            echo contador();
+
+            function dobro(&$numero)
+            {
+                $numero = $numero * 2;
+            }
+            $a = 4;
+            dobro($a);
+            echo $a;
+
+            
+
+
 
         ?>
        <!-- Olá <?php echo $mensagem; ?>-->
