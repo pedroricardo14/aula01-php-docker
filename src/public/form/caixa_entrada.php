@@ -18,6 +18,7 @@
                 <li> E-mail 1 </li>
                 <li> E-mail 2 </li>
             </ul>
+            <a href="https://www.google.com/search?q=Pedro+Ricardo+Twitter">Busca</a>
             <input type="hidden" name="id" value="<?php echo $userID ?>" />
         </form>
     </body>
