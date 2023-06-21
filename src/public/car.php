@@ -43,14 +43,24 @@ $car2->accelerar();
 
 class Pessoa {
 
+    public $nome;
+    public $idade;
+
     // Método construtor
-    function construtor() {
+    function __construct() {
         echo 'Um objeto foi criado <br /> ';
     }
 
+    function perfil() {
+        echo 'Eu sou ' . $this->nome . ' <br /> ';
+        echo 'Eu tenho '. $this->idade.'<br /> ';
+    } 
+
 }
     $p1 = new Pessoa();
-
+    $p1->nome = 'Maria';
+    $p1->idade = 22;
+    $p1->perfil();
     $p2 = new Pessoa();
 
 ?>
